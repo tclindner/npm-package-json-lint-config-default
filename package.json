@@ -1,0 +1,53 @@
+{
+  "name": "npm-package-json-lint-config-default",
+  "version": "1.0.0",
+  "description": "Default npm-package-json-lint shareable config",
+  "keywords": [
+    "lint",
+    "linter",
+    "package.json",
+    "audit",
+    "auditor",
+    "npm-package-json-lint",
+    "npm-package-json-lintconfig",
+    "npm-package-json-lint-config"
+  ],
+  "homepage": "https://github.com/tclindner/npm-package-json-lint-config-default#readme",
+  "bugs": {
+    "url": "https://github.com/tclindner/npm-package-json-lint-config-default/issues"
+  },
+  "author": "Thomas Lindner",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tclindner/npm-package-json-lint-config-default.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint *.js --format=node_modules/eslint-formatter-pretty",
+    "jscs": "jscs *.js",
+    "jsonlint": "jsonlint *.json",
+    "lint": "npm run npmpackagejsonlint && npm run eslint && npm run jscs && npm run jsonlint",
+    "npmpackagejsonlint": "pjl-cli -c .npmpackagejsonlintrc.json",
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-tc": "^1.4.0",
+    "eslint-formatter-pretty": "^1.1.0",
+    "is-plain-obj": "^1.1.0",
+    "jscs": "^3.0.7",
+    "jsonlint": "^1.6.2",
+    "mocha": "^3.2.0",
+    "npm-package-json-lint": "^2.0.2",
+    "should": "^11.2.0",
+    "temp-write": "^3.1.0"
+  },
+  "peerDependencies": {
+    "npm-package-json-lint": ">= 2"
+  },
+  "engines": {
+    "node": ">=4.2.0",
+    "npm": ">=2.14.7"
+  },
+  "license": "MIT"
+}
