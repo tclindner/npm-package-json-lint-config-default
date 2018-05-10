@@ -22,8 +22,8 @@ First thing first, let's make sure you have the necessary pre-requisites.
 
 #### Node
 
-* [Node.js](https://nodejs.org/) - v4.2.0+
-* [npm](http://npmjs.com) - v2.14.7+
+* [Node.js](https://nodejs.org/) - v6.0.0+
+* [npm](http://npmjs.com) - v3.0.0+
 
 ### Command
 

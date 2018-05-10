@@ -12,6 +12,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Removed
 
 
+## [2.0.0] - 2018-05-09
+### Changed
+- Bump dependencies and require npm-package-json-lint 3.x.x
+
+### Removed
+- Dropped support for Node 4 and 5.
+
 ## [1.1.0] - 2017-08-02
 ### Changed
 - Bump dependencies
