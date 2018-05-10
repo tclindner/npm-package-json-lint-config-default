@@ -1,12 +1,9 @@
 'use strict';
 
-const NpmPackageJsonLint = require('npm-package-json-lint');
+const NpmPackageJsonLint = require('npm-package-json-lint').NpmPackageJsonLint;
 
 module.exports = function lint(packageJsonData, config) {
-  const options = {
-    ignoreWarnings: true
-  };
-  const npmPackageJsonLint = new NpmPackageJsonLint(packageJsonData, config, options);
+  const npmPackageJsonLint = new NpmPackageJsonLint();
 
-  return npmPackageJsonLint.lint();
+  return npmPackageJsonLint.lint(packageJsonData, config);
 };

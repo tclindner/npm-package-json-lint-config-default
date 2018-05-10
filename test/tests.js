@@ -25,10 +25,10 @@ describe('npm-package-json-lint config tests', () => {
       const packageJsonData = {
         author: 'Caitlin Snow'
       };
-      const results = lint(packageJsonData, config);
+      const results = lint(packageJsonData, config.rules);
       const expectedErrorCount = 2;
 
-      results.errors.length.should.equal(expectedErrorCount);
+      results.issues.length.should.equal(expectedErrorCount);
       results.hasOwnProperty('warnings').should.be.false;
     });
   });
