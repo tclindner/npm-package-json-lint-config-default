@@ -28,7 +28,7 @@ describe('npm-package-json-lint config tests', () => {
       const results = lint(packageJsonData, config.rules);
       const expectedErrorCount = 2;
 
-      results.errorCount.should.equal(expectedErrorCount);
+      results.issues.length.should.equal(expectedErrorCount);
       results.hasOwnProperty('warnings').should.be.false;
     });
   });
