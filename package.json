@@ -1,6 +1,6 @@
 {
   "name": "npm-package-json-lint-config-default",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Default npm-package-json-lint shareable config",
   "keywords": [
     "lint",
@@ -25,7 +25,7 @@
   "scripts": {
     "eslint": "eslint *.js --format=node_modules/eslint-formatter-pretty",
     "lint": "npm run npmpackagejsonlint && npm run eslint",
-    "npmpackagejsonlint": "pjl-cli -c .npmpackagejsonlintrc.json",
+    "npmpackagejsonlint": "npmPkgJsonLint .",
     "test": "mocha"
   },
   "devDependencies": {
