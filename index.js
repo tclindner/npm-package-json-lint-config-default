@@ -1,5 +1,3 @@
-'use strict';
-
 const defaultConfig = {
   rules: {
     'require-name': 'error',
