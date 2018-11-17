@@ -1,6 +1,4 @@
-'use strict';
-
-const NpmPackageJsonLint = require('npm-package-json-lint').NpmPackageJsonLint;
+const {NpmPackageJsonLint} = require('npm-package-json-lint');
 
 module.exports = function lint(packageJsonData, config) {
   const npmPackageJsonLint = new NpmPackageJsonLint();
