@@ -26,7 +26,8 @@
     "eslint": "eslint *.js --format=node_modules/eslint-formatter-pretty",
     "lint": "npm run npmpackagejsonlint && npm run eslint",
     "npmpackagejsonlint": "npmPkgJsonLint .",
-    "test": "mocha"
+    "test": "jest",
+    "test:ci": "jest --runInBand"
   },
   "devDependencies": {
     "chai": "^4.2.0",

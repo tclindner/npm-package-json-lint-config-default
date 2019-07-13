@@ -1,24 +1,21 @@
-const chai = require('chai');
 const isPlainObj = require('is-plain-obj');
-const config = require('./../index.js');
+const config = require('../index.js');
 const lint = require('./helper/testHelper.js');
 
-const should = chai.should();
-
 describe('npm-package-json-lint config tests', () => {
-  context('npm-package-json-lint config object', () => {
+  describe('npm-package-json-lint config object', () => {
     it('should be an object', () => {
-      isPlainObj(config).should.equal(true);
+      expect(isPlainObj(config)).toBeTruthy();
     });
   });
 
-  context('rules', () => {
+  describe('rules', () => {
     it('should be an object', () => {
-      isPlainObj(config.rules).should.equal(true);
+      expect(isPlainObj(config.rules)).toBeTruthy();
     });
   });
 
-  context('run npm-package-json-lint and make sure it runs', () => {
+  describe('run npm-package-json-lint and make sure it runs', () => {
     it('npm-package-json-lint should run without failing', () => {
       const packageJsonData = {
         author: 'Caitlin Snow'
@@ -26,8 +23,8 @@ describe('npm-package-json-lint config tests', () => {
       const results = lint(packageJsonData, config.rules);
       const expectedErrorCount = 2;
 
-      results.issues.length.should.equal(expectedErrorCount);
-      results.hasOwnProperty('warnings').should.be.false;
+      expect(results.issues.length).toStrictEqual(expectedErrorCount);
+      expect(results.hasOwnProperty('warnings')).toBeFalsy();
     });
   });
 });
