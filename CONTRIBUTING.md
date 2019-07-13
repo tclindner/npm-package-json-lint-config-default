@@ -4,8 +4,8 @@
 
 ### Node
 
-* [Node.js](https://nodejs.org/) - v6.0.0+
-* [npm](https://www.npmjs.com/) - v3.0.0+
+* [Node.js](https://nodejs.org/) - v8.0.0+
+* [npm](https://www.npmjs.com/) - v5.0.0+
 
 ## Install project dependencies
 
@@ -23,16 +23,9 @@ This installs dependencies from `package.json`.
 
 ### JavaScript
 
-npm-package-json-lint-config-default utilizes both ESLint and JSCS to enforce JavaScript standards. Please see the `.eslintrc.json` file for ESLint config and `.jscsrc` for JSCS config.
+npm-package-json-lint-config-default utilizes ESLint to enforce JavaScript standards. Please see the `.eslintrc.json` file for more details.
 
 * [eslint](https://github.com/eslint/eslint)
-* [jscs](https://github.com/jscs-dev/node-jscs)
-
-#### JSON
-
-npm-package-json-lint-config-default utilizes JSON Lint to ensure JSON files are valid.
-
-* [jsonlint](https://github.com/zaach/jsonlint)
 
 #### package.json
 

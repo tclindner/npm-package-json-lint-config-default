@@ -21,30 +21,35 @@
     "type": "git",
     "url": "git+https://github.com/tclindner/npm-package-json-lint-config-default.git"
   },
+  "files": [
+    "index.js",
+    "CONTRIBUTING.md"
+  ],
   "main": "index.js",
   "scripts": {
     "eslint": "eslint *.js --format=node_modules/eslint-formatter-pretty",
     "lint": "npm run npmpackagejsonlint && npm run eslint",
     "npmpackagejsonlint": "npmPkgJsonLint .",
-    "test": "mocha"
+    "test": "jest",
+    "test:ci": "jest --runInBand"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^5.12.1",
-    "eslint-config-tc": "^5.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-tc": "^6.5.0",
     "eslint-formatter-pretty": "^2.1.1",
-    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "is-plain-obj": "^2.0.0",
-    "mocha": "^6.1.4",
-    "npm-package-json-lint": "^3.4.1",
-    "temp-write": "^4.0.0"
+    "jest": "^24.8.0",
+    "npm-package-json-lint": "^3.7.0",
+    "prettier": "^1.18.2"
   },
   "peerDependencies": {
     "npm-package-json-lint": ">= 3"
   },
   "engines": {
-    "node": ">=6.0.0",
-    "npm": ">=3.0.0"
+    "node": ">=8.0.0",
+    "npm": ">=6.0.0"
   },
   "license": "MIT"
 }
