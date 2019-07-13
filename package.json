@@ -37,7 +37,7 @@
     "is-plain-obj": "^1.1.0",
     "mocha": "^6.1.4",
     "npm-package-json-lint": "^3.4.1",
-    "temp-write": "^3.4.0"
+    "temp-write": "^4.0.0"
   },
   "peerDependencies": {
     "npm-package-json-lint": ">= 3"
