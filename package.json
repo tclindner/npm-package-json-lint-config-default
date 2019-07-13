@@ -21,6 +21,10 @@
     "type": "git",
     "url": "git+https://github.com/tclindner/npm-package-json-lint-config-default.git"
   },
+  "files": [
+    "index.js",
+    "CONTRIBUTING.md"
+  ],
   "main": "index.js",
   "scripts": {
     "eslint": "eslint *.js --format=node_modules/eslint-formatter-pretty",
