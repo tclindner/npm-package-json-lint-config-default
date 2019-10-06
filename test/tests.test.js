@@ -1,30 +1,39 @@
 const isPlainObj = require('is-plain-obj');
+const {NpmPackageJsonLint} = require('npm-package-json-lint');
 const config = require('../index.js');
-const lint = require('./helper/testHelper.js');
 
 describe('npm-package-json-lint config tests', () => {
   describe('npm-package-json-lint config object', () => {
-    it('should be an object', () => {
-      expect(isPlainObj(config)).toBeTruthy();
+    test('should be an object', () => {
+      expect(isPlainObj(config)).toBe(true);
     });
   });
 
   describe('rules', () => {
-    it('should be an object', () => {
-      expect(isPlainObj(config.rules)).toBeTruthy();
+    test('should be an object', () => {
+      expect(isPlainObj(config.rules)).toBe(true);
     });
   });
 
   describe('run npm-package-json-lint and make sure it runs', () => {
-    it('npm-package-json-lint should run without failing', () => {
+    test('npm-package-json-lint should run without failing', () => {
       const packageJsonData = {
         author: 'Caitlin Snow'
       };
-      const results = lint(packageJsonData, config.rules);
+      const npmPackageJsonLint = new NpmPackageJsonLint({
+        packageJsonObject: packageJsonData,
+        config,
+        packageJsonFilePath: 'npm-package-json-lint-config-tc'
+      });
+
+      const output = npmPackageJsonLint.lint();
       const expectedErrorCount = 2;
 
-      expect(results.issues.length).toStrictEqual(expectedErrorCount);
-      expect(results.hasOwnProperty('warnings')).toBeFalsy();
+      expect(output.results).toHaveLength(1);
+      expect(output.results[0].issues).toHaveLength(expectedErrorCount);
+      expect(output.ignoreCount).toStrictEqual(0);
+      expect(output.errorCount).toStrictEqual(expectedErrorCount);
+      expect(output.warningCount).toStrictEqual(0);
     });
   });
 });
