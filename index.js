@@ -26,8 +26,8 @@ const defaultConfig = {
     'private-type': 'error',
     'repository-type': 'error',
     'scripts-type': 'error',
-    'version-type': 'error'
-  }
+    'version-type': 'error',
+  },
 };
 
 module.exports = defaultConfig;
