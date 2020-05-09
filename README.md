@@ -5,7 +5,7 @@
 
 [![license](https://img.shields.io/github/license/tclindner/npm-package-json-lint-config-default.svg?maxAge=2592000&style=flat-square)](https://github.com/tclindner/npm-package-json-lint-config-default/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/npm-package-json-lint-config-default.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/npm-package-json-lint-config-default)
-[![CircleCI](https://circleci.com/gh/tclindner/npm-package-json-lint-config-default.svg?style=svg)](https://circleci.com/gh/tclindner/npm-package-json-lint-config-default)
+![ci](https://github.com/tclindner/npm-package-json-lint-config-default/workflows/ci/badge.svg?branch=master)
 [![Dependency Status](https://david-dm.org/tclindner/npm-package-json-lint-config-default.svg?style=flat-square)](https://david-dm.org/tclindner/npm-package-json-lint-config-default)
 [![devDependency Status](https://david-dm.org/tclindner/npm-package-json-lint-config-default/dev-status.svg?style=flat-square)](https://david-dm.org/tclindner/npm-package-json-lint-config-default#info=devDependencies)
 
