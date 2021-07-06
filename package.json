@@ -41,7 +41,7 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-prettier": "^3.4.0",
-    "is-plain-obj": "^3.0.0",
+    "is-plain-obj": "^4.0.0",
     "jest": "^27.0.6",
     "npm-package-json-lint": "^5.1.0",
     "prettier": "^2.3.2"
