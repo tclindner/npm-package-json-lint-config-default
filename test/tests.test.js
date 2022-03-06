@@ -18,12 +18,12 @@ describe('npm-package-json-lint config tests', () => {
   describe('run npm-package-json-lint and make sure it runs', () => {
     test('npm-package-json-lint should run without failing', () => {
       const packageJsonData = {
-        author: 'Caitlin Snow'
+        author: 'Caitlin Snow',
       };
       const npmPackageJsonLint = new NpmPackageJsonLint({
         packageJsonObject: packageJsonData,
         config,
-        packageJsonFilePath: 'npm-package-json-lint-config-tc'
+        packageJsonFilePath: 'npm-package-json-lint-config-tc',
       });
 
       const output = npmPackageJsonLint.lint();
