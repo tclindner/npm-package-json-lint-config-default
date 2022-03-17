@@ -45,7 +45,7 @@
     "is-plain-obj": "^3.0.0",
     "jest": "^27.5.1",
     "npm-package-json-lint": "^6.0.3",
-    "prettier": "^2.5.1"
+    "prettier": "^2.6.0"
   },
   "peerDependencies": {
     "npm-package-json-lint": "^6.0.3"
