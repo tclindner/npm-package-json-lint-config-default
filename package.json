@@ -50,8 +50,8 @@
     "npm-package-json-lint": "^7.1.0"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8.0.0"
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "license": "MIT"
 }
