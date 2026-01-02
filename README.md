@@ -62,4 +62,4 @@ Please see [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-Copyright (c) 2017-2023 Thomas Lindner. Licensed under the MIT license.
+Copyright (c) 2017-2026 Thomas Lindner. Licensed under the MIT license.
