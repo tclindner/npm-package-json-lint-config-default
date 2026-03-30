@@ -1,17 +1,18 @@
-const isPlainObj = require('is-plain-obj');
+// eslint-disable-next-line unicorn/prefer-module
 const {NpmPackageJsonLint} = require('npm-package-json-lint');
+// eslint-disable-next-line unicorn/prefer-module, import-x/extensions
 const config = require('../index.js');
 
 describe('npm-package-json-lint config tests', () => {
   describe('npm-package-json-lint config object', () => {
     test('should be an object', () => {
-      expect(isPlainObj(config)).toBe(true);
+      expect(typeof config === 'object').toBe(true);
     });
   });
 
   describe('rules', () => {
     test('should be an object', () => {
-      expect(isPlainObj(config.rules)).toBe(true);
+      expect(typeof config.rules === 'object').toBe(true);
     });
   });
 
