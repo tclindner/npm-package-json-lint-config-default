@@ -43,7 +43,7 @@
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-unicorn": "^64.0.0",
     "globals": "^17.6.0",
-    "jest": "^30.4.1",
+    "jest": "^30.4.2",
     "npm-package-json-lint": "^10.4.0",
     "prettier": "^3.8.3"
   },
