@@ -4,6 +4,8 @@ updates:
   directory: "/"
   schedule:
     interval: daily
+  cooldown:
+    default-days: 3
   groups:
     eslint-dependencies:
       patterns:
@@ -21,3 +23,5 @@ updates:
   directory: "/"
   schedule:
     interval: "daily"
+  cooldown:
+    default-days: 3
