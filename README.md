@@ -2,6 +2,7 @@
 
 > Default [npm-package-json-lint](https://github.com/tclindner/npm-package-json-lint) shareable config
 
+> **Deprecated:** this rule set is now built into `npm-package-json-lint` itself. Replace `"extends": "npm-package-json-lint-config-default"` with `"extends": "npm-package-json-lint:default"` in your `.npmpackagejsonlintrc.json` and remove this package from your dependencies. See the [configuration docs](https://npmpackagejsonlint.org/docs/configuration/#built-in-default-config) for details. This repository is no longer maintained.
 
 [![license](https://img.shields.io/github/license/tclindner/npm-package-json-lint-config-default.svg?maxAge=2592000&style=flat-square)](https://github.com/tclindner/npm-package-json-lint-config-default/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/npm-package-json-lint-config-default.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/npm-package-json-lint-config-default)
